@@ -5,28 +5,33 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
   },
   {
     path: "/webgl",
     name: "WebGL",
     component: () =>
-      import(/* webpackChunkName: "webgl" */ "../views/WebGL.vue")
+      import(/* webpackChunkName: "webgl" */ "../views/WebGL.vue"),
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/db",
+    name: "DB",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "db" */ "../views/DB.vue"),
+  },
+  {
+    path: "/wechat",
+    name: "Wechat",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
+      import(/* webpackChunkName: "wechat" */ "../views/Wechat.vue"),
+  },
 ];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
 });
 
 export default router;

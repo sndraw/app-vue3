@@ -1,0 +1,21 @@
+.wechat-jump {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  .loading-tip {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .open-tip {
+    margin: 30px auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .weapp-btn {
+    margin: 30px auto;
+  }
+}

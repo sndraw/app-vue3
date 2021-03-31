@@ -1,10 +1,11 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import router from "./router";
-import store from "./store";
 import plugins from "./plugins";
-createApp(App)
-  .use(store)
-  .use(router)
-  .use(plugins)
-  .mount("#app");
+import store from "./store";
+import router from "./router";
+const app = createApp(App);
+// app.config.ignoredElements = ["wx-open-launch-weapp"];
+app.use(plugins);
+app.use(store);
+app.use(router);
+app.mount("#app");

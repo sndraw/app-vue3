@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="home text-center">
+    <img alt="Vue logo" src="../assets/img/logo.png" />
+    <app-test :title="testTitle"></app-test>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import { ref } from "vue";
 
+import AppTest from "./../components/Test.vue";
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  }
+  components: { AppTest },
+  setup() {
+    const testTitle = ref("app-test");
+    return {
+      testTitle,
+    };
+  },
 };
 </script>
