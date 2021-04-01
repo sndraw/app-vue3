@@ -8,6 +8,6 @@ const index = (req, res) => {
     data: indexData,
   });
 };
-module.export = {
+module.exports = {
   index,
 };

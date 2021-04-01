@@ -130,7 +130,7 @@ export default {
     };
     onMounted(() => {
       // 如果是微信端
-      if (isWeiXin.value) {
+      if (!isWeiXin.value) {
         // 绑定小程序跳转开发标签
         bindOpenLaunchWeapp();
         // 初始化微信公众号事件

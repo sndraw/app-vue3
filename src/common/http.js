@@ -1,8 +1,7 @@
 /**
  * http配置
- * Created by sn on 2019/3/18.
  */
-// 引入axios以
+// 引入axios
 import axios from "axios";
 // 超时时间
 axios.defaults.timeout = 3600;

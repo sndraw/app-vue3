@@ -1,5 +1,5 @@
 import wechatApi from "@/api/wechat";
-class SiteService {
+class WechatService {
   constructor() {}
   async getJsSdkConfig(params) {
     const result = await wechatApi.getJsSdkConfig(params).then((res) => {
@@ -9,4 +9,4 @@ class SiteService {
   }
 }
 
-export default SiteService;
+export default WechatService;

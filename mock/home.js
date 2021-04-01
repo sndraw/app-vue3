@@ -9,6 +9,6 @@ const index = (req, res) => {
   });
 };
 
-module.export = {
+module.exports = {
   index,
 };
