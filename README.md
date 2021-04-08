@@ -1,9 +1,9 @@
 ## 项目架构
 
 > 开发语言：ES6+  
-> 基本架构：vue(v3.0)、vue-router(v4.0)、vuex(v4.0)
-> 脚手架：vue-cli(v4.0)、Node.js(v14.16.0)
-> 运行环境：Chrome、IE11+
+> 基本架构：vue(v3.0)、vue-router(v4.0)、vuex(v4.0)  
+> 脚手架：vue-cli(v4.0)、Node.js(v14.16.0)  
+> 运行环境：Chrome、IE11+  
 
 ## 使用说明
 
