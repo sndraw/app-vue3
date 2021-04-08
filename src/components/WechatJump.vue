@@ -90,7 +90,7 @@ export default {
           title: "测试", // 分享标题
           desc: "测试测试", // 分享描述
           link: location.href.split("#")[0], // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-          imgUrl: "https://www.sndraw.com/logo.png", // 分享图标
+          imgUrl: "https://cn.vuejs.org/images/logo.png", // 分享图标
           success: () => {
             // 设置成功
           },
