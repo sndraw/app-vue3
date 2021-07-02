@@ -7,9 +7,9 @@ const particleAnim = (canvasEl) => {
     pos = { x: w / 2, y: h / 2 };
 
   function intCanvas() {
-    (w = window.innerWidth),
-      (h = window.innerHeight),
-      (pos = { x: w / 2, y: h / 2 });
+    w = window.innerWidth;
+    h = window.innerHeight;
+    pos = { x: w / 2, y: h / 2 };
     spawn();
   }
   const config = {

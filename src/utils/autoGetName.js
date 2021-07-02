@@ -1,5 +1,5 @@
 const autoGetName = () => {
-  const familyNames = new Array(
+  const familyNames = [
     "赵",
     "钱",
     "孙",
@@ -99,9 +99,9 @@ const autoGetName = () => {
     "和",
     "穆",
     "萧",
-    "尹"
-  );
-  const givenNames = new Array(
+    "尹",
+  ];
+  const givenNames = [
     "子璇",
     "淼",
     "国栋",
@@ -202,8 +202,8 @@ const autoGetName = () => {
     "佳昊",
     "天昊",
     "萌萌",
-    "若萌"
-  );
+    "若萌",
+  ];
   const i = parseInt(familyNames.length * Math.random());
   const familyName = familyNames[i];
   const j = parseInt(givenNames.length * Math.random());

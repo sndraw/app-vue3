@@ -1,5 +1,5 @@
 // 已知三角形的两点坐标,和三个边长,求第三点的坐标
-const calculateTriangleThirdPoint = (vA = {}, vB = {}, a, b, c) => {
+export const calculateTriangleThirdPoint = (vA = {}, vB = {}, a, b, c) => {
   const cosA = (b * b + c * c - a * a) / (2 * b * c);
   if (cosA > 1.0 || cosA < -1.0) {
     return { x: 0, y: 0 };
@@ -18,8 +18,4 @@ const calculateTriangleThirdPoint = (vA = {}, vB = {}, a, b, c) => {
   const vC = { x: vA.x - vAC.x, y: vA.y - vAC.y };
   console.log(vA, vB, vC, a, b, c);
   return vC;
-};
-
-export default {
-  calculateTriangleThirdPoint,
 };
