@@ -42,7 +42,7 @@ sit：`npm run hot:sit`
 
 #### 打包
 
-本地：`npm run local`  
-dev：`npm run dev`  
-sit：`npm run sit`  
-生产：`npm run prod`
+本地：`npm run build:local`  
+dev：`npm run build:dev`  
+sit：`npm run build:sit`  
+生产：`npm run build:prod`

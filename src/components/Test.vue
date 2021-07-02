@@ -6,9 +6,6 @@
 </template>
 <script>
 import { onBeforeMount, onMounted, reactive, computed, watchEffect } from "vue";
-import { useStore } from "vuex";
-import TestService from "@/service/TestService";
-const testService = new TestService();
 export default {
   name: "Test",
   props: {
@@ -18,12 +15,6 @@ export default {
     },
   },
   setup(props) {
-    console.log(testService.getInfo());
-    const { getters, dispatch } = useStore(); // 获取store 实例
-    document.title = getters.title;
-    dispatch("setTitle", "app-test").then(() => {
-      document.title = getters.title;
-    });
     const state = reactive({
       count: 0,
     });
