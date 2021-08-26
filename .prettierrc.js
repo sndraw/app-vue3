@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'prettier'],
   eslintIntegration:true,
   stylelintIntegration:true,
   singleQuote: true, // 使用单引号
