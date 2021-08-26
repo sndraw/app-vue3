@@ -10,8 +10,7 @@ const routes = [
   {
     path: "/home",
     name: "Home",
-    component: () =>
-      import(/* webpackChunkName: "webgl" */ "../views/Home.vue"),
+    component: () => import(/* webpackChunkName: "home" */ "../views/Home.vue"),
   },
   {
     path: "/webgl",

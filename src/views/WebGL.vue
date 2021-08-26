@@ -102,11 +102,20 @@ export default {
       renderer.render(scene, camera);
       animate();
     };
+    const onWindowResize = () => {
+      const containerEl = container.value;
+      camera.aspect = containerEl.clientWidth / containerEl.clientHeight; // 重置渲染区域的长宽比
+      camera.updateProjectionMatrix(); // 更新相机对象的投影矩阵属性
+      renderer.setSize(containerEl.clientWidth, containerEl.clientHeight); // 重置场景大小
+    };
     onMounted(() => {
       init();
+      window.addEventListener("resize", onWindowResize, false);
     });
     onBeforeUnmount(() => {
       animFlag = false;
+      // 卸载resize事件
+      window.removeEventListener("resize", onWindowResize, false);
     });
     return {
       container,
